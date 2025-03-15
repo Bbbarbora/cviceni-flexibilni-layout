@@ -35,4 +35,29 @@ Potom zkuste třeba tři nebo čtyři sloupce.
 Pro každou variantu si pomocí devtools udělejte screenshot.
 */
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.foto {
+  flex-basis: 50%;
+  /* flex-shrink: 0; */
+}
+
+@media (min-width: 600px) {
+  .foto {
+    flex-basis: calc(100% /3);
+
+  }
+
+}
+
 
